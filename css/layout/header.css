@@ -1,0 +1,265 @@
+.menu {
+  display: none;
+}
+.page-contact {
+  display: none;
+}
+.logo {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 24px 0;
+  display: block;
+}
+.logo-studio {
+  color: #2e2f42;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.page-header {
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-mobile-button {
+  border: none;
+  background-color: transparent;
+}
+.menu-mobile-icon {
+  stroke: #2f2f37;
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999999;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 40px 16px;
+ 
+}
+.is-open {
+opacity: 1;
+visibility: visible;
+}
+
+.close-button-mobile {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  stroke-width: 1px;
+  stroke: #2e2f42;
+
+}
+.page-mobile-nav {
+  margin-top: 24px;
+  
+ 
+}
+
+.menu-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
+}
+
+.menu-mobile-item{
+  color: #2E2F42;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.studio-mobile-link{
+  color: #404bbf
+}
+ .nav-mobile-link:active,
+ .nav-mobile-link:hover,
+ .nav-mobile-link:focus {
+   color: #4d5ae5;
+ }
+
+ .contact-social-mobile-container{
+ margin-top: auto;
+ }
+.list-menu-mobile-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.link-contact-mobile{
+  color: #434455;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.link-contact-mobile-phone{
+  color: #404bbf;
+
+}
+
+.social-icon-list-mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  
+  
+}
+.social-icon-mobile-item{
+  width: 40px;
+  height: 40px;
+}
+.social-icon-mobile-link{
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon-mobile{
+  fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+  .page-nav{
+    display: flex;
+  }
+  .page-contact{
+    display: block;
+  }
+  .menu-mobile-button{
+    display: none;
+  }
+  .logo{
+    margin-right: 120px;
+  }
+
+  .nav-link {
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding: 24px 0;
+  }
+  .nav-link:active,
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #404bbf;
+  }
+  .menu-item {
+    display: block;
+  }
+
+  .studio-item {
+    color: #404bbf;
+    display: block;
+    position: relative;
+  }
+
+  .studio-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    border-radius: 2px;
+    background: #404bbf;
+    width: 100%;
+  }
+
+  .menu-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+  }
+
+  .page-contact {
+    font-style: normal;
+    margin-left: auto;
+   
+  }
+
+  .link-contact {
+    color: #434455;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .link.link-contact:hover,
+  .link-contact:focus {
+    color: #404bbf;
+  }
+}
+@media screen and (min-width:1158px) {
+
+    .logo{
+        margin-right: 76px;
+    }
+    .menu-contact{
+        flex-direction: row;
+        gap:40px;
+    }
+    .link-contact{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+

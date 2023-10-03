@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,7 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <!-- <link rel="stylesheet" href="./css/styles.css"/> -->
 </head>
 <!--Page HEADER-->
 
@@ -23,6 +24,11 @@
             <li class="menu-item"><a class="link nav-link" href="">Contacts</a></li>
         </ul>
     </nav>
+    <button class="menu-mobile-button" data-menu-open>
+        <svg class="menu-mobile-icon " width="24" height="24">
+            <use href="./images/icons.svg#icon-menu" ></use>
+        </svg>
+    </button>
     <address class="page-contact">
         <ul class="list menu-contact">
             <li class="menu-item-contact"><a class="link link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -42,7 +48,7 @@
     </div>
     </section>
 <!--Features-->    
-    <section class="section-second">
+ <section class="section-second">
         <div class="container features-container">
         <h2 class="visually-hidden">Features</h2>
         <ul class="menu-second list">
@@ -52,8 +58,8 @@
         <use href="./images/icons.svg#icon-antenna"></use>
    </svg>
 </div>
-                <h3 class="title-tertiary title-tertiary-features">Strategy</h3>
-                <p class="text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                <h3 class=" title-tertiary-features">Strategy</h3>
+                <p class="text-second">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
             </li>
             <li class="menu-item-second">
 <div class="menu-icon-container">
@@ -62,8 +68,8 @@
         </use>
       </svg>
 </div>
-                  <h3 class="title-tertiary title-tertiary-features">Punctuality</h3>
-                <p class="text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                  <h3 class="title-tertiary-features">Punctuality</h3>
+                <p class="text-second">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
             </li>
             <li class="menu-item-second">
 <div class="menu-icon-container">
@@ -72,8 +78,8 @@
     </use>
     </svg>
 </div>
-                <h3 class="title-tertiary title-tertiary-features">Diligence</h3>
-                <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                <h3 class=" title-tertiary-features">Diligence</h3>
+                <p class="text-second">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
             </li>
             <li class="menu-item-second">
 <div class="menu-icon-container">
@@ -81,8 +87,8 @@
         <use href="./images/icons.svg#icon-astronaut"></use>
     </svg>
 </div>
-                <h3 class="title-tertiary title-tertiary-features">Technologies</h3>
-                <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                <h3 class="title-tertiary-features">Technologies</h3>
+                <p class="text-second">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul>
     </div>
@@ -93,7 +99,8 @@
         <h2 class="title-secondary">Our Team</h2>
         <ul class="list menu-third">
             <li class="menu-item-third">
-                <img class="menu-img-third" src="./images/img-mark-guerrero.jpg" alt="Mark Guerrero" width="264">
+                <img srcset="./images/mark.jpg 1x, ./images/mark2x.jpg 2x" src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+               
                 <div class="box-container-team">
                     <h3 class="title-tertiary title-tertiary-team">Mark Guerrero</h3>
                 <p class="text text-team">Product Designer</p>
@@ -133,7 +140,7 @@
               </div>  
             </li>
             <li class="menu-item-third">
-                <img class="menu-img-third" src="./images/img-tom-ford.jpg" alt="Tom Ford" width="264">
+                <img srcset="./images/tom.jpg 1x, ./images/tom2x.jpg 2x" src="./image/tom.jpg" alt="Tom" width="264" />
                 <div class="box-container-team">
                     <h3 class="title-tertiary title-tertiary-team">Tom Ford</h3>
                 <p class="text text-team">Frontend Developer</p>
@@ -174,7 +181,7 @@
             </div>
             </li>
             <li class="menu-item-third">
-                <img class="menu-img-third" src="./images/img-camila-garcia.jpg" alt="Camila Garcia"  width="264">
+            <img srcset="./images/camila.jpg 1x, /images/camila2x.jpg 2x" src="/images/camila.jpg" alt="Camila" width="264" />
                 <div class="box-container-team">
                     <h3 class="title-tertiary title-tertiary-team">Camila Garcia</h3>
                 <p class="text text-team">Marketing</p>
@@ -214,8 +221,7 @@
             </div>
             </li>
             <li class="menu-item-third">
-                <img class="menu-img-third" src="./images/img-daniel-wilson.jpg" alt="Daniel Wilson" width="264">
-                <div class="box-container-team">
+                <img srcset="./images/daniel.jpg 1x, /images/daniel2x.jpg 2x" src="/images/daniel.jpg" alt="Daniel" width="264" />                <div class="box-container-team">
                     <h3 class="title-tertiary title-tertiary-team">Daniel Wilson</h3>
                 <p class="text text-team">UI Designer</p>
                 <ul class="social-icon-list list">
@@ -258,13 +264,21 @@
         </div>
     </section>
 <!--Portfolio-->    
-    <section class="section-fourth">
+   <section class="section-fourth">
         <div class="container conteiner-section-forth">
         <h2 class="title-secondary">Our Portfolio</h2>
         <ul class="list menu-fourth">
             <li class="menu-item-fourth">
             <div class="portfolio-list-img-wrapper">
-                <img class="menu-img-fourth" src="./images/img-banking-app.jpg" alt="Banking App" width="360">
+                <img srcset="./images/banking-desk.jpg 360w,
+                             ./images/banking-desk2x.jpg 720w,
+                             ./images/banking-tab.jpg 356w,
+                             ./images/banking-tab2x.jpg 712w,
+                             ./images/banking-mob.jpg 288w, 
+                             ./images/banking-mob2x.jpg 576w"
+                             sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px " 
+                src="./images/banking-mob.jpg"
+                alt="Banking app"/>     
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts 
                     · Task Manager App · Calorie Tracker App 
@@ -279,7 +293,15 @@
             </li>
             <li class="menu-item-fourth">
             <div class="portfolio-list-img-wrapper">
-                <img class="menu-img-fourth" src="./images/img-cashless-payment.jpg" alt="Cashless Payment" width="360">
+            <img srcset="./images/payment-desk.jpg 360w,
+                         ./images/payment-desk2x.jpg 720w,
+                         ./images/payment-tab.jpg 356w,
+                         ./images/payment-tab2x.jpg 712w,
+                         ./images/payment-mob.jpg 288w, 
+                         ./images/payment-mob2x.jpg 576w"
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px "
+                src="./images/banking-mob.jpg"
+                alt="Cashless payment" />
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts
                     · Task Manager App · Calorie Tracker App
@@ -293,7 +315,15 @@
             </li>
             <li class="menu-item-fourth">
             <div class="portfolio-list-img-wrapper">
-                <img class="menu-img-fourth" src="./images/img-meditation-app.jpg" alt="Meditation App" width="360">
+            <img srcset="./images/meditation-desk.jpg 360w,
+                    ./images/meditation-desk2x.jpg 720w,
+                    ./images/meditation-tab.jpg 356w,
+                    ./images/meditation-tab2x.jpg 712w,
+                    ./images/meditation-mob.jpg 288w, 
+                    ./images/meditation-mob2x.jpg 576w"
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px " 
+                src="./images/meditation-mob.jpg"
+                alt="Meditation app"/>     
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts 
                     · Task Manager App · Calorie Tracker App 
@@ -307,7 +337,15 @@
             </li>
             <li class="menu-item-fourth">
             <div class="portfolio-list-img-wrapper">
-                <img class="menu-img-fourth" src="./images/img-taxi-service.jpg" alt="Taxi Service" width="360">
+            <img srcset="./images/taxi-desk.jpg 360w,
+                        ./images/taxi-desk2x.jpg 720w,
+                        ./images/taxi-tab.jpg 356w,
+                        ./images/taxi-tab2x.jpg 712w,
+                        ./images/taxi-mob.jpg 288w, 
+                        ./images/taxi-mob2x.jpg 576w"
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px "
+                src="./images/taxi-mob.jpg"
+                alt="Taxi service" />
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts 
                     · Task Manager App · Calorie Tracker App 
@@ -321,7 +359,15 @@
             </li>
             <li class="menu-item-fourth">
             <div class="portfolio-list-img-wrapper">
-                <img class="menu-img-fourth" src="./images/img-screen-illustrations.jpg" alt="Screen Illustrations" width="360">
+            <img srcset="./images/illustration-desk.jpg 360w,
+                                         ./images/illustration-desk2x.jpg 720w,
+                                         ./images/illustration-tab.jpg 356w,
+                                         ./images/illustration-tab2x.jpg 712w,
+                                         ./images/illustration-mob.jpg 288w, 
+                                         ./images/illustration-mob2x.jpg 576w"
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px "
+                src="./images/banking-mob.jpg"
+                alt="Screen illustration" />
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts
                     · Task Manager App · Calorie Tracker App 
@@ -335,7 +381,15 @@
             </li>
             <li class="menu-item-fourth">
             <div class="portfolio-list-img-wrapper">
-                <img class="menu-img-fourth" src="./images/img-online-courses.jpg" alt="Online Courses" width="360">
+                <img srcset="./images/courses-desk.jpg 360w,
+                            ./images/courses-desk2x.jpg 720w,
+                            ./images/courses-tab.jpg 356w,
+                            ./images/courses-tab2x.jpg 712w,
+                            ./images/courses-mob.jpg 288w, 
+                            ./images/courses-mob2x.jpg 576w"
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px " 
+                    src="./images/banking-mob.jpg"
+                    alt="Online courses" />
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts 
                     · Task Manager App · Calorie Tracker App 
@@ -352,8 +406,8 @@
     </section>
 </main>
 <!--Footer-->
-<footer class="page-footer ">
-    <div class="container container-footer">
+ <footer class="page-footer ">
+   <div class="container container-footer">
         <div class="logo-text-container">
     <a class="logo link logo-footer" href="./index.html">Web<span class="logo-studio-footer">Studio</span></a>
     <p class="text-footer">Increase the flow of customers and sales for your business
@@ -413,9 +467,9 @@
        </form>
     </div>  
     </div>
-</footer>  
+</footer>
 <!--BACKDROP WITH MODAL WINDOW-->
-<div class="backdrop is-open">
+<div class="backdrop">
     <div class="modal">
         <button class="close-button" type="button"> 
             <svg class="close-btn-icon" width="8" height="8">
@@ -482,6 +536,71 @@
    
  </form>
 </div>
-</div>   
+</div> 
+<!--MOBILE MENU-->
+ <div class="mobile-menu" data-menu>
+    <button class="close-button-mobile" type="button" data-menu-close>
+        <svg class="close-btn-mobile-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+    </button>
+    <nav class="page-mobile-nav">
+        <ul class="list menu-mobile">
+            <li class="menu-mobile-item "><a href="" class="link nav-mobile-link studio-mobile-link">Studio</a></li>
+            <li class="menu-mobile-item"><a href="" class="link nav-mobile-link">Portfolio</a></li>
+            <li class="menu-mobile-item"><a href="" class="link nav-mobile-link">Contacts</a></li>
+        </ul>
+     </nav>  
+     <div class="contact-social-mobile-container">
+     <address class="page-mobile-contact">
+        <ul class=" list list-menu-mobile-contact">
+            <li class=" menu-mobile-contact">
+               <a class="link link-contact-mobile link-contact-mobile-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li class=" menu-mobile-contact">
+            <li> <a class="link link-contact-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a>   
+            </li>
+        </ul>
+   </address>
+    <div class="social-list-container-mobile">
+        <ul class="social-icon-list-mobile list">
+            <li class="social-icon-mobile-item">
+                <a class="social-icon-mobile-link" href="">
+                    <svg class="social-icon-mobile" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-icon-mobile-item">
+                <a class="social-icon-mobile-link" href="">
+                    <svg class="social-icon-mobile" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-icon-mobile-item">
+                <a class="social-icon-mobile-link" href="">
+                    <svg class="social-icon-mobile" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-icon-mobile-item">
+                <a class="social-icon-mobile-link" href="">
+                    <svg class="social-icon-mobile" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+
+</div> 
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
